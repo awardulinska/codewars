@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ShortestWord {
     public static int findShort (String s) {
@@ -11,4 +12,11 @@ public class ShortestWord {
     return shortestWord.length();
     }
 
+//    public static int findShort(String s) {
+//        return Stream.of(s.split(" "))
+//                .mapToInt(String::length)
+//                .min()
+//                .getAsInt();
+//    }
 }
+
