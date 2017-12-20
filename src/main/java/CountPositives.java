@@ -6,15 +6,13 @@ public class CountPositives {
         int countElements = 0;
         int sum = 0;
         for (int i = 0; i < input.length; i++) {
-            if (input != null) {
+
                 if (input[i] > 0) {
                     countElements++;
                 }
                 if (input[i] < 0) {
                     sum += input[i];
                 }
-
-            }
         }
         return new int[]{countElements, sum};
     }
